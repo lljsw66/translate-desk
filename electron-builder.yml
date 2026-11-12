@@ -1,0 +1,23 @@
+appId: com.translate.desk
+productName: TranslateDesk
+directories:
+  output: release
+  buildResources: build
+electronDist: node_modules/electron/dist
+files:
+  - out/**
+  - package.json
+extraResources:
+  - from: resources/icon.png
+    to: icon.png
+  - from: resources/selection-helper.ps1
+    to: selection-helper.ps1
+win:
+  target:
+    - nsis
+  icon: build/icon.png
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true

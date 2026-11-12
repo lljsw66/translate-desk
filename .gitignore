@@ -1,0 +1,7 @@
+node_modules
+out
+release
+.npm-cache
+.idea
+*.log
+.DS_Store
